@@ -23,6 +23,12 @@ for example, ```![sent](https://i.imgur.com/rIru4Br.png)``` will look like :
 6. Once you're done writing the blog, fill in the commit message and click the 'commit change' button.
 7. Once commited, Gitlab's CI will do the rest for you.
 
+### Image upload via gitlab
+
+1. Navigate to files -> src -> posts, and then click the '+' icon and choose 'Upload new file.' 
+2. Drag and drop / choose the image, enter your commit message and click 'upload file'
+3. Right click on the image, then choose 'copy image location' and paste it into your blog using the syntax `![image-name](image-url)`
+
 ## Development
 
 1. Download Gatsby CLI

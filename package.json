@@ -27,7 +27,6 @@
     "gatsby-source-filesystem": "^2.0.18",
     "gatsby-source-firestore": "^1.0.3",
     "gatsby-transformer-remark": "^2.2.2",
-    "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
     "react": "^16.5.1",
     "react-bootstrap": "^1.0.0-beta.5",
@@ -45,8 +44,5 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "devDependencies": {
-    "@andrew-codes/gatsby-plugin-elasticlunr-search": "^1.0.4"
   }
 }

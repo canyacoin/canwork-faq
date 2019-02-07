@@ -6,11 +6,23 @@ body {
     color: #535353;
 }
 
+
 .navbar {
     box-shadow: 0 0 10px 2.5px rgba(0, 0, 0, 0.125);
     height: 55px;
     margin-bottom: 10px;
+    background-color: white;
 }
+
+.navbar a {
+    color: #535353;
+    letter-spacing: 1.5px;
+}
+
+.faqContainer{
+    padding-bottom: 10vh;
+}
+
 
 .navbar-brand img {
     height: 30px;
@@ -57,4 +69,8 @@ footer a:hover{
 
 .faqContainer h2 {
     margin-top: 50px;
+}
+
+.faqTop{
+    margin-top: 10vh;
 }

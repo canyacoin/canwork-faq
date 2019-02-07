@@ -15,7 +15,7 @@ export default () => (
             }
         `
         } render = {data => (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div className="container">
                 <div className="row"  style={{ width: `100%` }}>
                     <div className="col-4">

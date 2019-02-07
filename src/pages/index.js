@@ -9,24 +9,9 @@ const IndexPage = (props) => {
     <SEO title="CanWork Blog"  keywords={[`CanWork`,`Blog`, `Freelance`, `Cryptocurrency`]} ></SEO>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 faqTop">
             <h1>FAQs</h1>
-            <p>Frequently Asked Questions<br></br>We're here to help - search or browse below for some common questions about CanYa.</p>
-            <div className="input-group">
-                <input className="form-group form-control" type="text"></input>
-                <div className="input-group-append">
-                  <button className="btn btn-primary" style={{
-                    backgroundColor   : '#33ccff',
-                    borderColor       : '#33ccff',
-                    backgroundImage   : 'url(/search.svg)',
-                    backgroundRepeat  : 'no-repeat',
-                    backgroundPosition: 'center center',
-                    backgroundSize    : '50%',
-                    padding           : '0 25px'
-                  }}>
-                  </button>
-                </div>
-            </div>
+            <p>Frequently Asked Questions<br></br>We're here to help - browse below for some common questions about CanYa.</p>
           </div>
           <div className="col-md-6 text-center">
             <img alt="CanYa Consult" style={{maxWidth: `300px`}} src={withPrefix('/consult.gif')}></img>

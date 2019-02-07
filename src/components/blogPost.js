@@ -1,13 +1,9 @@
 import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 import { graphql } from 'gatsby'
 function BlogPost (props) {
   const post = props.data.markdownRemark;
   const {title} = post.frontmatter;
-  return (
-    <Layout>
-    <SEO title={title}></SEO>
+  return ( 
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -16,8 +12,7 @@ function BlogPost (props) {
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
         </div>
-      </div>
-    </Layout>
+      </div> 
   )
 }
 

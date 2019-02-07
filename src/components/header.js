@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, StaticQuery, graphql } from "gatsby" 
+import { StaticQuery, graphql } from "gatsby" 
 
 export default () => (
     <StaticQuery 
@@ -29,8 +29,8 @@ export default () => (
                     </button>
                     <div class="collapse navbar-collapse text-right"   style={{ position: `absolute`, right: 0, top: `20px` }} id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link" href="#">JOBS</a>
-                            <a class="nav-item nav-link" href="#">BLOG</a>
+                            <a class="nav-item nav-link" href="https://canwork.io/jobs">JOBS</a>
+                            <a class="nav-item nav-link" href="https://canwork.io/jobs">BLOG</a>
                         </div>
                     </div>
                 </div>

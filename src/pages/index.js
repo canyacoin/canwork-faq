@@ -35,9 +35,7 @@ const IndexPage = (props) => {
         {postList.edges.map(({ node }, i) => (
           <div key={`parentDiv`+i}> 
               <div key={`row`+i} className="row">
-                <div key={`col`+i}  className="col-12"> 
-                    <h1 key={`title_`+i} >{node.frontmatter.title}</h1> 
-                    <p key={`excerpt_`+i} >{node.excerpt}</p>
+                <div key={`col`+i}  className="col-12 faqContainer" dangerouslySetInnerHTML={{ __html: node.html }} > 
                 </div>
               </div>
           </div>
@@ -50,12 +48,13 @@ const IndexPage = (props) => {
 export default IndexPage;
 export const listQuery = graphql`
   query ListQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___title] }) {
+    allMarkdownRemark {
       edges {
         node {
           fields{
             slug
-          }
+          }      
+          html
           excerpt(pruneLength: 250)
           frontmatter {
             title

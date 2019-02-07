@@ -3,6 +3,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
+    color: #535353;
 }
 
 .navbar {
@@ -38,4 +39,22 @@ h1, h2, h3, h4, h5 {
 .nav-item {
     font-weight: 600;
     font-size: 12px;
+}
+
+footer a{
+    color: #535353;
+}
+footer a:hover{
+    color: #535353;
+}
+.social {
+    margin-bottom: 20px;
+}
+.social a{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.faqContainer h2 {
+    margin-top: 50px;
 }

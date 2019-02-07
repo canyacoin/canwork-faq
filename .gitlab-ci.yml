@@ -17,3 +17,17 @@ pages:
       - node_modules
   only:
   - master
+  
+deploy_production:
+  stage: deploy
+  environment: Production
+  only:
+    - master
+  script:
+    - npm install -g firebase-tools
+    - npm install -g gatsby-cli
+    - npm install
+    - npx gatsby build
+    - ls
+    - firebase use canwork-faq --token $FIREBASE_DEPLOY_KEY 
+    - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_DEPLOY_KEY

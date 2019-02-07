@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { graphql } from 'gatsby'
 function BlogPost (props) {
   const post = props.data.markdownRemark;
-  const {title, date} = post.frontmatter;
+  const {title} = post.frontmatter;
   return (
     <Layout>
     <SEO title={title}></SEO>
@@ -12,7 +12,6 @@ function BlogPost (props) {
         <div className="row">
           <div className="col-12">
             <h1>{title}</h1>
-            <p>{date}</p>
             <br></br>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
@@ -32,7 +31,6 @@ export const query = graphql `
       excerpt
       frontmatter {
           title
-          date
       }
     }
   }

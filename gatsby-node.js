@@ -7,7 +7,7 @@ exports.createPages = ({ actions, graphql }) => {
         resolve(graphql(`
                 {
                 allMarkdownRemark(
-                sort: { order: DESC, fields: [frontmatter___date] }
+                sort: { order: DESC, fields: [frontmatter___title] }
                 limit: 1000
                 ) 
                 {
@@ -17,7 +17,7 @@ exports.createPages = ({ actions, graphql }) => {
                                 slug
                             }
                             frontmatter {
-                            title
+                                title
                                 }
                             }
                         }

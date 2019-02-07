@@ -1,8 +1,8 @@
 module.exports = {
-    pathPrefix: `/canwork-blog`,
+    pathPrefix: `/canwork-faq`,
     siteMetadata: {
-        title: `CanWork Blog`,
-        description: `The CanWork Blog.`,
+        title: `CanWork FAQ`,
+        description: `The CanWork FAQ.`,
         logoUrl: `https://www.canwork.io/assets/img/logo.svg`,
         author: `CanYa`
     },
@@ -31,6 +31,13 @@ module.exports = {
             resolve: `gatsby-plugin-typography`,
             options: {
                 pathToConfigModule: `src/utils/typography`,
+            },
+        },
+        `gatsby-transformer-json`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                path: `${__dirname}/src/faqs`,
             },
         }
     ],

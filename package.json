@@ -26,6 +26,7 @@
     "gatsby-plugin-typography": "^2.2.6",
     "gatsby-source-filesystem": "^2.0.18",
     "gatsby-source-firestore": "^1.0.3",
+    "gatsby-transformer-json": "^2.1.8",
     "gatsby-transformer-remark": "^2.2.2",
     "popper.js": "^1.14.7",
     "react": "^16.5.1",

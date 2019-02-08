@@ -1,6 +1,6 @@
-# CanWork Blog
+# CanWork FAQ
 
-A simple blog website built upon Gatsby.js
+A simple FAQ page built upon Gatsby.js
 
 ## Blog-Writing
 

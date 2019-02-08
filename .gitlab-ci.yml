@@ -28,3 +28,15 @@ pages:
       - public
   only:
     - master
+
+deploy_production:
+  stage: deploy
+  environment: Production
+  only:
+    - master
+  script:
+    - gitbook build . public # build to public path
+    - ls
+    - firebase use canwork-blog --token $FIREBASE_DEPLOY_KEY 
+    - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_DEPLOY_KEY
+

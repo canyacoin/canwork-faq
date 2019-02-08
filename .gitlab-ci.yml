@@ -38,6 +38,6 @@ deploy_production:
     - npm install -g firebase-tools
     - gitbook build . public # build to public path
     - ls
-    - firebase use canwork-blog --token $FIREBASE_DEPLOY_KEY 
+    - firebase use canwork-faq --token $FIREBASE_DEPLOY_KEY 
     - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_DEPLOY_KEY
 

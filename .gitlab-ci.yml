@@ -23,5 +23,8 @@ pages:
   stage: deploy
   script:
     - gitbook build . public # build to public path
+  artifacts:
+    paths:
+      - public
   only:
     - master

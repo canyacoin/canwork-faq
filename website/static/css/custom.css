@@ -1,0 +1,98 @@
+/* your custom css */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+    color: #535353;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.nav-footer .sitemap .nav-home {
+    width: 200px;
+}
+
+.btn-describe {
+    min-width: 300px;
+}
+
+.btn-primary {
+    background-color: #33ccff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.15px;
+    margin: 5px 0;
+}
+
+.headerTitleWithLogo {
+    display: none !important;
+}
+
+.fixedHeaderContainer {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+}
+
+a {
+    color: #33ccff;
+}
+
+a:hover {
+    color: #33ccff;
+}
+
+.navigationSlider .slidingNav ul li a {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    color: rgba(83, 83, 83, 0.75);
+}
+
+.navigationSlider .slidingNav ul li.siteNavItemActive a,
+.navigationSlider .slidingNav ul li.siteNavGroupActive a {
+    color: rgba(83, 83, 83, 1);
+}
+
+.navigationSlider .slidingNav ul li a:hover {
+    color: #535353;
+}
+
+.toc .toggleNav ul li.navListItemActive a,
+.toc .toggleNav ul li a:hover {
+    color: #535353;
+}
+
+.toc .toggleNav ul li a {
+    color: rgba(83, 83, 83, 0.75);
+}
+
+
+.navigationSlider .slidingNav ul li {
+    flex: 1 1 auto;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    background-color: white;
+    color: #535353;
+}
+
+@media only screen and (max-width: 735px) {
+    .navigationSlider .slidingNav ul {
+        overflow-x: auto;
+        box-shadow: 0 5px 5px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {}
+
+    @media only screen and (min-width: 1024px) {}
+
+    @media only screen and (max-width: 1023px) {}
+
+    @media only screen and (min-width: 1400px) {}
+
+    @media only screen and (min-width: 1500px) {}

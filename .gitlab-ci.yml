@@ -6,6 +6,7 @@ cache:
 
 before_script:
   - npm install --global docusaurus-init # install docusaurus
+  - npm install -g firebase-tools
 
 test:
   stage: test
@@ -33,9 +34,9 @@ deploy_production:
   only:
     - master
   script:
-    - npm install -g firebase-tools
     - cd website
     - ls
+    - npm install
     - npm run build
     - firebase use canwork-faq --token $FIREBASE_DEPLOY_KEY 
     - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_DEPLOY_KEY

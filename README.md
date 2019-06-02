@@ -1,3 +1,11 @@
+****
+
+> **Mirror**
+> This repo mirrors from Gitlab to Github. Please commit to the Gitlab repo:
+> https://gitlab.com/canyacoin/canwork/canwork-faq
+
+****
+
 ## Who is CanWork For?
 
 CanWork is a platform for clients to find quality providers who offer digital services (eg. software engineering, graphics design, content writing, digital marketing).
